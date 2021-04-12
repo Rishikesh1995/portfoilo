@@ -1,2 +1,2 @@
-# portfoilo
+# portfolio 
 my portfolio
