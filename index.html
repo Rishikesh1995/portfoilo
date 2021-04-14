@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     rel="stylesheet"
@@ -459,7 +460,7 @@ https://templatemo.com/tm-528-elegance
                                         </div>
                                     </div>
                                     <div class="col-md-6 animate" data-animate="fadeInUp">
-                                        <form id="contactForm1" method="post" action="mailto:rishikesh1694@gmail.com" target="_blank" class="my-form">
+                                        <form id="contact-form" method="POST" action="feedback_form.php" class="my-form">
                                             <div class="input-field">
                                                 <input type="text" class="form-control" name="name" id="name" required placeholder="Name">
                                             </div>
@@ -469,7 +470,7 @@ https://templatemo.com/tm-528-elegance
                                             <div class="input-field">
                                                 <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
                                             </div>
-                                            <button class="btn" type="submit" value="submit">Submit</button>
+                                            <button class="btn" type="submit" value="send">Submit</button>
                                         </form>
                                         <div id="form-messages" class="mt-3"></div>
                                     </div>
@@ -494,6 +495,8 @@ https://templatemo.com/tm-528-elegance
         </div>
     </div>  
 
+    
+
     <script src="js/jquery.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
@@ -511,17 +514,6 @@ https://templatemo.com/tm-528-elegance
     <script src="js/custom.js"></script>
 
 
-    <script>
-        (function($){
-            $("body").on("submit", ".my-form", function(e){
-                e.preventDefault();
-                var form = $(e.target);
-                $.post( form.attr("action"), form.serialize(), function(res){
-                    console.log(res);
-                });
-            });
-        )(jQuery);
-    </script>
 
   </body>
 </html>
